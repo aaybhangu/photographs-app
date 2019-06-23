@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { photoSelected } from "../actions";
 class PhotosList extends React.Component {
   photoSelected = event => {
-    console.log("photoSelected:: ", event.target.value);
     this.props.photoSelected(event.target.value);
   };
   render() {
